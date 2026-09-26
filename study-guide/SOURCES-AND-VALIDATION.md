@@ -1,0 +1,143 @@
+# Sources, currency, and validation
+
+[Study guide home](README.md)
+
+## Basis
+
+- [User-supplied official syllabus](https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf). Read on 2026-09-26; four domains and 12 numbered subsections.
+- [Certification details and official sample-question entry point](https://cloud.google.com/learn/certification/cloud-engineer).
+- Official Google Cloud product documentation is linked in each note. Kubernetes and Helm references are upstream documentation where applicable.
+
+The syllabus is used as a coverage outline. Explanations, examples, exercises, and questions are original study material. They are not official Google exam questions and do not assert a passing guarantee. Domain weights come from the supplied guide; no individual topic frequency is claimed.
+
+## What was checked
+
+- The guide structure was compared with every numbered subsection and bullet in the supplied PDF. Grouped products are explained within topic notes and, for data services, additional individual files.
+- Product reference URLs were opened during preparation; outdated paths found during that check were replaced with working official references. Redirects and future documentation changes remain possible.
+- Local Markdown links, code-fence balance, unique file paths, and expected subsection/topic counts were checked programmatically.
+- No GCP account was used and no infrastructure was deployed for validation. Commands and manifests are instructional examples, not verified execution transcripts.
+
+## How to handle changing details
+
+Use the exact syllabus names for recognition, including former product names shown there. Verify current CLI help, region availability, pricing, quotas, supported modes, and AI-tool interfaces before a hands-on deployment. The guide avoids fixed price or capacity assumptions that are unnecessary for learning the decision process.
+
+## Product references
+
+- [Resource hierarchy and project identifiers](https://docs.cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy)
+- [Organization policies and constraints](https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview)
+- [Granting project IAM roles](https://docs.cloud.google.com/iam/docs/granting-changing-revoking-access)
+- [Cloud Identity users and groups](https://cloud.google.com/identity/docs/overview)
+- [Enabling service APIs](https://docs.cloud.google.com/service-usage/docs/enable-disable)
+- [Initial observability setup](https://docs.cloud.google.com/monitoring/docs/monitoring-overview)
+- [Quotas, limits, and capacity](https://docs.cloud.google.com/docs/quotas/overview)
+- [Standalone organization setup](https://docs.cloud.google.com/resource-manager/docs/standalone-organization-overview)
+- [Initial cloud networking](https://docs.cloud.google.com/vpc/docs/subnets)
+- [Regions, zones, and product availability](https://cloud.google.com/about/locations)
+- [Cloud Asset Inventory and Gemini Cloud Assist](https://docs.cloud.google.com/asset-inventory/docs/overview)
+- [Workforce Identity Federation](https://docs.cloud.google.com/iam/docs/workforce-identity-federation)
+- [Creating and administering billing accounts](https://docs.cloud.google.com/billing/docs/concepts)
+- [Linking projects to billing accounts](https://docs.cloud.google.com/billing/docs/how-to/modify-project)
+- [Budgets and alerts](https://docs.cloud.google.com/billing/docs/how-to/budgets)
+- [Billing exports and cost analysis](https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery)
+- [Choosing a compute service](https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run)
+- [Launching VMs and availability policies](https://docs.cloud.google.com/compute/docs/instances/create-start-instance)
+- [Persistent Disk, Hyperdisk, and Local SSD](https://docs.cloud.google.com/compute/docs/disks)
+- [Instance templates, MIGs, and autoscaling](https://docs.cloud.google.com/compute/docs/instance-groups)
+- [OS Login and SSH authorization](https://docs.cloud.google.com/compute/docs/oslogin)
+- [VM Manager](https://docs.cloud.google.com/compute/vm-manager/docs/overview)
+- [Spot VMs and custom machine types](https://docs.cloud.google.com/compute/docs/instances/spot)
+- [Installing and configuring kubectl](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl)
+- [GKE Standard, Autopilot, regional, and private clusters](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview)
+- [Deploying a containerized application to GKE](https://docs.cloud.google.com/kubernetes-engine/docs/deploy-app-cluster)
+- [Cloud Run functions, Pub/Sub, and Eventarc](https://docs.cloud.google.com/eventarc/docs/overview)
+- [Choosing GPUs or TPUs](https://docs.cloud.google.com/tpu/docs/intro-to-tpu)
+- [Choosing databases, analytics, messaging, and pipelines](https://docs.cloud.google.com/docs/product-list)
+- [Object, file, and parallel filesystem storage](https://docs.cloud.google.com/filestore/docs/overview)
+- [Cloud Storage classes and access costs](https://docs.cloud.google.com/storage/docs/storage-classes)
+- [Loading and transferring data](https://docs.cloud.google.com/storage-transfer/docs/overview)
+- [Multi-region redundancy and disaster recovery](https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide)
+- [Custom VPC, Shared VPC, and VPC Peering](https://docs.cloud.google.com/vpc/docs/shared-vpc)
+- [VPC firewall rules and Cloud NGFW policies](https://docs.cloud.google.com/firewall/docs/firewalls)
+- [Network tags, secure tags, and service accounts](https://docs.cloud.google.com/firewall/docs/tags-firewalls-overview)
+- [Cloud VPN, Interconnect, and peering](https://docs.cloud.google.com/network-connectivity/docs/vpn/concepts/overview)
+- [Choosing and configuring load balancers](https://docs.cloud.google.com/load-balancing/docs/choosing-load-balancer)
+- [Premium and Standard Network Service Tiers](https://docs.cloud.google.com/network-tiers/docs/overview)
+- [Terraform, Fabric FAST, Config Connector, and Helm](https://docs.cloud.google.com/docs/terraform/terraform-overview)
+- [Gemini CLI, Antigravity, Cloud Assist, and Application Design Center](https://docs.cloud.google.com/application-design-center/docs/overview)
+- [Connecting to Compute Engine instances](https://docs.cloud.google.com/compute/docs/connect/ssh-using-iap)
+- [Viewing and inspecting running VMs](https://docs.cloud.google.com/sdk/gcloud/reference/compute/instances/list)
+- [Snapshots, images, and recovery](https://docs.cloud.google.com/compute/docs/disks/snapshots)
+- [Inspecting GKE nodes, Pods, and Services](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/deployed-workloads)
+- [GKE access to Artifact Registry](https://docs.cloud.google.com/artifact-registry/docs/integrate-gke)
+- [Managing GKE node pools](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-pools)
+- [Pods, Deployments, Services, and StatefulSets](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
+- [Horizontal and vertical Pod autoscaling](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/horizontalpodautoscaler)
+- [Autopilot Pod resource requests](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests)
+- [Deploying Cloud Run revisions](https://docs.cloud.google.com/run/docs/deploying)
+- [Traffic splitting and progressive delivery](https://docs.cloud.google.com/run/docs/rollouts-rollbacks-traffic-migration)
+- [Cloud Run autoscaling and concurrency](https://docs.cloud.google.com/run/docs/about-instance-autoscaling)
+- [Attaching and operating GPUs and TPUs](https://docs.cloud.google.com/compute/docs/gpus/create-vm-with-gpus)
+- [Deploying and operating Agent Runtime](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/deploy-an-agent)
+- [Workbench and BigQuery notebooks](https://docs.cloud.google.com/vertex-ai/docs/workbench/introduction)
+- [Cloud Workstations and developer environments](https://docs.cloud.google.com/workstations/docs/overview)
+- [Managing and securing Cloud Storage objects](https://docs.cloud.google.com/storage/docs/access-control)
+- [Object lifecycle management](https://docs.cloud.google.com/storage/docs/lifecycle)
+- [Querying Cloud SQL, BigQuery, Bigtable, Spanner, Firestore, and AlloyDB](https://docs.cloud.google.com/bigquery/docs/running-queries)
+- [Estimating storage and database costs](https://docs.cloud.google.com/bigquery/docs/best-practices-costs)
+- [Database backups and restoration](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backups)
+- [Monitoring Dataflow and BigQuery jobs](https://docs.cloud.google.com/dataflow/docs/guides/using-monitoring-intf)
+- [Database Center fleet management](https://docs.cloud.google.com/database-center/docs/overview)
+- [Customer-managed encryption keys](https://docs.cloud.google.com/kms/docs/cmek)
+- [Expanding a subnet IPv4 range](https://docs.cloud.google.com/vpc/docs/using-vpc)
+- [Static internal and external IP addresses](https://docs.cloud.google.com/vpc/docs/reserve-static-external-ip-address)
+- [Custom static routes](https://docs.cloud.google.com/vpc/docs/routes)
+- [Cloud DNS, Cloud NAT, and Private Google Access](https://docs.cloud.google.com/nat/docs/overview)
+- [Operating firewall rules and policies](https://docs.cloud.google.com/firewall/docs/firewall-rules-logging)
+- [Metric-based alerts and notification channels](https://docs.cloud.google.com/monitoring/alerts)
+- [Application metrics and log-based metrics](https://docs.cloud.google.com/logging/docs/logs-based-metrics)
+- [Audit logs, VPC Flow Logs, and firewall logs](https://docs.cloud.google.com/logging/docs/audit)
+- [Routing logs to BigQuery, Cloud Storage, Pub/Sub, and external systems](https://docs.cloud.google.com/logging/docs/export/configure_export_v2)
+- [Log buckets, retention, views, and Log Analytics](https://docs.cloud.google.com/logging/docs/buckets)
+- [Viewing and filtering logs](https://docs.cloud.google.com/logging/docs/view/logs-explorer-interface)
+- [Reading individual log entries and correlating requests](https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry)
+- [Trace, Profiler, Query Insights, and index advice](https://docs.cloud.google.com/trace/docs/overview)
+- [Personalized Service Health](https://docs.cloud.google.com/service-health/docs/overview)
+- [Installing and configuring Ops Agent](https://docs.cloud.google.com/logging/docs/agent/ops-agent)
+- [Managed Service for Prometheus](https://docs.cloud.google.com/stackdriver/docs/managed-prometheus)
+- [Gemini Cloud Assist for monitoring](https://docs.cloud.google.com/gemini/docs/cloud-assist/overview)
+- [Active Assist and resource optimization](https://docs.cloud.google.com/recommender/docs/overview)
+- [Cloud Hub events and application health](https://docs.cloud.google.com/hub/docs/overview)
+- [Viewing and creating IAM policies](https://docs.cloud.google.com/iam/docs/policies)
+- [Role attachment and policy inheritance](https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control)
+- [Basic, predefined, and custom IAM roles](https://docs.cloud.google.com/iam/docs/roles-overview)
+- [User-managed accounts and Google-managed service agents](https://docs.cloud.google.com/iam/docs/service-account-types)
+- [Least privilege for workload identities](https://docs.cloud.google.com/iam/docs/best-practices-service-accounts)
+- [Assigning service accounts to resources](https://docs.cloud.google.com/iam/docs/attach-service-accounts)
+- [Permissions held by versus permissions on a service account](https://docs.cloud.google.com/iam/docs/manage-access-service-accounts)
+- [Service account impersonation](https://docs.cloud.google.com/iam/docs/service-account-impersonation)
+- [Short-lived access tokens and ID tokens](https://docs.cloud.google.com/iam/docs/create-short-lived-credentials-direct)
+- [Google Cloud identities for GKE applications](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity)
+- [Workload Identity Federation for external workloads](https://docs.cloud.google.com/iam/docs/workload-identity-federation)
+- [Cloud SQL: relational applications, HA, and replicas](https://docs.cloud.google.com/sql/docs/postgres/high-availability)
+- [AlloyDB for PostgreSQL](https://docs.cloud.google.com/alloydb/docs/overview)
+- [Spanner: distributed relational transactions](https://docs.cloud.google.com/spanner/docs/overview)
+- [Firestore: document data and indexes](https://docs.cloud.google.com/firestore/native/docs/overview)
+- [Bigtable: wide-column and row-key design](https://docs.cloud.google.com/bigtable/docs/schema-design)
+- [BigQuery: analytical jobs and cost controls](https://docs.cloud.google.com/bigquery/docs/introduction)
+- [Pub/Sub: topics, subscriptions, acknowledgments](https://docs.cloud.google.com/pubsub/docs/pubsub-basics)
+- [Dataflow: batch and streaming pipelines](https://docs.cloud.google.com/dataflow/docs/overview)
+- [Managed Service for Apache Kafka](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/overview)
+- [Memorystore: caching and in-memory access](https://docs.cloud.google.com/memorystore/docs/redis/memorystore-for-redis-overview)
+- [NetApp Volumes: enterprise file workloads](https://docs.cloud.google.com/netapp/volumes/docs/discover/overview)
+- [Managed Lustre: parallel filesystem workloads](https://docs.cloud.google.com/managed-lustre/docs/overview)
+
+## Additional tooling and foundational references
+
+- [Cloud Foundation Fabric FAST](https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/blob/master/fast/README.md)
+- [Config Connector overview](https://docs.cloud.google.com/config-connector/docs/overview)
+- [Helm charts](https://helm.sh/docs/topics/charts/)
+- [Official Antigravity/Gemini CLI naming context](https://codelabs.developers.google.com/agentic-ui-automation-with-antigravity)
+- [Google Cloud resource hierarchy](https://docs.cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy)
+- [Application Default Credentials](https://docs.cloud.google.com/docs/authentication/application-default-credentials)
+- [gcloud CLI reference](https://docs.cloud.google.com/sdk/gcloud/reference)
+- [Kubernetes concepts](https://kubernetes.io/docs/concepts/)
